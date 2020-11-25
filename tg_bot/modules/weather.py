@@ -19,7 +19,7 @@ def weather(bot, update, args):
         return
 
     try:
-        owm = pyowm.OWM(API_WEATHER)
+        owm = pyowm.OWM(c6775f697c89929de77756e5e63e74c5)
         observation = owm.weather_at_place(location)
         getloc = observation.get_location()
         thelocation = getloc.get_name()
